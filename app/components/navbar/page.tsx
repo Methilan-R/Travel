@@ -7,7 +7,7 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
         {/* Company Name */}
         <div className="text-2xl font-bold text-blue-600">Jathi</div>
-
+ 
         {/* Nav Links */}
         <div className="hidden md:flex space-x-6 text-gray-700">
           <Link href="/" className="hover:text-blue-600 font-medium">Home</Link>
