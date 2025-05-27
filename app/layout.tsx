@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 //import { Geist, Geist_Mono } from "next/font/google";
 import {Poppins} from 'next/font/google'
 import "./globals.css";
+import MobileNav from "./components/Navbar/MobileNav";
+import ResponsiveNav from "./components/Navbar/ResponsiveNav";
  
 const font = Poppins({
   weight:['100','200','300','400','500','600','700','800','900'],
@@ -33,7 +35,7 @@ export default function RootLayout({
       <body
       className={`${font.className} antialiased`}
       >
-          
+          <ResponsiveNav/>
         {children}
           
       </body>
