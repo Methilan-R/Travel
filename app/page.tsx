@@ -1,9 +1,10 @@
 import Image from "next/image";
+import Home from "./components/Home/Home";
 
 export default function HomePage() {
   return (
-     <h1 className="text-3xl font-bold underline">
-      Home page
-    </h1>
+      <div>
+        <Home/>
+      </div>
   );
 }
