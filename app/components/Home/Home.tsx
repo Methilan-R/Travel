@@ -1,12 +1,14 @@
-import React from 'react'
+'use client'
+import React, { useEffect } from 'react'
 import Hero from './Hero/Hero'
 import Destination from './Destination/Destination'
 import Hotel from './Hotel/Hotel'
 import WhyChoose from './WhyChoose/WhyChoose'
 import Review from './Review/Review'
 import News from './News/News'
-
-const Home = () => {
+import Newsletter from './Newsletter/Newsletter'
+ 
+const Home = () => { 
   return (
     <div className='overflow-hidden '>
       <Hero/>
@@ -15,6 +17,7 @@ const Home = () => {
       <WhyChoose/>
       <Review/>
       <News/>
+      <Newsletter/>
     </div>
   )
 }
