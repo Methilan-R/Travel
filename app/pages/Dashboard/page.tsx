@@ -50,7 +50,7 @@ export default function DashboardPage() {
           alt="Travel Hero"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-white text-center px-4">
+        <div className="absolute inset-0 bg-blue-600 bg-opacity-50 flex flex-col justify-center items-center text-white text-center px-4">
           <h1 className="text-5xl font-extrabold mb-4 drop-shadow-lg">
             Explore the World with Insights
           </h1>
