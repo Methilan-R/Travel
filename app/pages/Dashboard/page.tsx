@@ -43,13 +43,15 @@ const COLORS = ['#6366F1', '#10B981', '#F59E0B', '#EF4444'];
 export default function DashboardPage() {
   return (
     <div className="bg-gradient-to-br from-indigo-100 via-white to-teal-100 min-h-screen px-4 pb-12">
-      
+
       {/* Hero Section */}
       <div className="relative w-full h-[450px] rounded-3xl overflow-hidden mb-16 shadow-2xl">
         <Image
           src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1400&q=80"
           alt="Travel Hero"
-          className="w-full h-full object-cover"
+          fill
+          className="object-cover"
+          priority
         />
         <div className="absolute inset-0 bg-blue-600 bg-opacity-50 flex flex-col justify-center items-center text-white text-center px-4">
           <h1 className="text-5xl font-extrabold mb-4 drop-shadow-lg">
@@ -63,7 +65,7 @@ export default function DashboardPage() {
 
       {/* Chart Section */}
       <div className="grid gap-12 md:grid-cols-2">
-        
+
         {/* Bar Chart */}
         <div className="bg-white p-6 rounded-2xl shadow-xl hover:shadow-indigo-200 transition duration-300">
           <h2 className="text-xl font-semibold mb-4 text-indigo-700">🌍 Top Destinations</h2>
@@ -144,6 +146,7 @@ export default function DashboardPage() {
             </RadarChart>
           </ResponsiveContainer>
         </div>
+
       </div>
     </div>
   );

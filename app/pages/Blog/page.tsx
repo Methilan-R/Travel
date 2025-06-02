@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image';
+
 const blogPosts = [
   {
     title: "10 Must-Know Travel Hacks",
@@ -29,7 +30,7 @@ const blogPosts = [
     author: "Explorer Team",
     date: "February 10, 2025",
   },
-]
+];
 
 const Blog = () => {
   return (
@@ -39,7 +40,8 @@ const Blog = () => {
         <Image
           src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1950&q=80"
           alt="Blog Hero"
-          className="w-full h-full object-cover brightness-75"
+          fill
+          className="object-cover brightness-75"
         />
         <div className="absolute inset-0 flex flex-col items-center justify-center text-white text-center px-4">
           <h1 className="text-4xl md:text-6xl font-bold drop-shadow-lg">Travel Stories & Guides</h1>
@@ -58,11 +60,14 @@ const Blog = () => {
               key={index}
               className="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transform hover:scale-[1.02] transition duration-300"
             >
-              <Image
-                src={post.image}
-                alt={post.title}
-                className="w-full h-60 object-cover"
-              />
+              <div className="relative w-full h-60">
+                <Image
+                  src={post.image}
+                  alt={post.title}
+                  fill
+                  className="object-cover"
+                />
+              </div>
               <div className="p-5">
                 <h3 className="text-2xl font-semibold mb-2">{post.title}</h3>
                 <p className="text-gray-600 mb-3">{post.excerpt}</p>
@@ -75,7 +80,7 @@ const Blog = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Blog
+export default Blog;

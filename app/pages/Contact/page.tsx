@@ -6,10 +6,12 @@ const Contact = () => {
       {/* Hero Section */}
       <div className="relative h-[60vh] w-full">
         <Image
-          src="https://images.unsplash.com/photo-1494173853739-c21f58b16055?auto=format&fit=crop&w=1950&q=80"
-          alt="Contact Hero"
-          className="w-full h-full object-cover brightness-75"
-        />
+  src="https://images.unsplash.com/photo-1494173853739-c21f58b16055?auto=format&fit=crop&w=1950&q=80"
+  alt="Contact Hero"
+  fill
+  className="object-cover brightness-75"
+/>
+
         <div className="absolute inset-0 flex flex-col items-center justify-center text-white text-center px-4">
           <h1 className="text-4xl md:text-6xl font-bold drop-shadow-lg">Get in Touch</h1>
           <p className="mt-4 text-lg md:text-xl max-w-2xl drop-shadow-md">
