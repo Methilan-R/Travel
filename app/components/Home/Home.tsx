@@ -1,5 +1,5 @@
 'use client'
-import React, { useEffect } from 'react'
+import React  from 'react'
 import Hero from './Hero/Hero'
 import Destination from './Destination/Destination'
 import Hotel from './Hotel/Hotel'

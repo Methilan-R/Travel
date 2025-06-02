@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import Image from 'next/image';
 import {
   BarChart, Bar,
   LineChart, Line,
@@ -45,7 +46,7 @@ export default function DashboardPage() {
       
       {/* Hero Section */}
       <div className="relative w-full h-[450px] rounded-3xl overflow-hidden mb-16 shadow-2xl">
-        <img
+        <Image
           src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1400&q=80"
           alt="Travel Hero"
           className="w-full h-full object-cover"

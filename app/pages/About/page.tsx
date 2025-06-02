@@ -1,11 +1,11 @@
 import React from 'react'
-
+import Image from 'next/image';
 const About = () => {
   return (
     <div className="bg-white min-h-screen text-gray-800">
       {/* Hero Section */}
       <div className="relative h-[60vh] w-full">
-        <img
+        <Image
           src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e"
           alt="Travel Abroad"
           className="w-full h-full object-cover brightness-75"

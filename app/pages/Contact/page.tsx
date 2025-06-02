@@ -1,11 +1,11 @@
 import React from 'react'
-
+import Image from 'next/image';
 const Contact = () => {
   return (
     <div className="bg-white text-gray-800 min-h-screen">
       {/* Hero Section */}
       <div className="relative h-[60vh] w-full">
-        <img
+        <Image
           src="https://images.unsplash.com/photo-1494173853739-c21f58b16055?auto=format&fit=crop&w=1950&q=80"
           alt="Contact Hero"
           className="w-full h-full object-cover brightness-75"

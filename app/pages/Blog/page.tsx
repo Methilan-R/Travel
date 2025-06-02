@@ -1,5 +1,5 @@
 import React from 'react'
-
+import Image from 'next/image';
 const blogPosts = [
   {
     title: "10 Must-Know Travel Hacks",
@@ -36,7 +36,7 @@ const Blog = () => {
     <div className="bg-white text-gray-800 min-h-screen">
       {/* Hero Section */}
       <div className="relative h-[60vh] w-full">
-        <img
+        <Image
           src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1950&q=80"
           alt="Blog Hero"
           className="w-full h-full object-cover brightness-75"
@@ -58,7 +58,7 @@ const Blog = () => {
               key={index}
               className="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transform hover:scale-[1.02] transition duration-300"
             >
-              <img
+              <Image
                 src={post.image}
                 alt={post.title}
                 className="w-full h-60 object-cover"

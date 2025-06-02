@@ -1,5 +1,5 @@
 import React from 'react'
-
+import Image from 'next/image';
 const destinations = [
   {
   name: "Paris, France",
@@ -39,7 +39,7 @@ const Destination = () => {
     <div className="bg-white text-gray-800 min-h-screen">
       {/* Hero Section */}
       <div className="relative h-[60vh] w-full">
-        <img
+        <Image
           src="/images/hotel.jpg"
           alt="Destinations Hero"
           className="w-full h-full object-cover brightness-75"
@@ -61,7 +61,7 @@ const Destination = () => {
               key={index}
               className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transform hover:scale-105 transition duration-300"
             >
-              <img
+              <Image
                 src={dest.image}
                 alt={dest.name}
                 className="w-full h-64 object-cover"

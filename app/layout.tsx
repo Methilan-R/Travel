@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 //import { Geist, Geist_Mono } from "next/font/google";
 import {Poppins} from 'next/font/google'
-import "./globals.css";
-import MobileNav from "./components/Navbar/MobileNav";
+import "./globals.css"; 
 import ResponsiveNav from "./components/Navbar/ResponsiveNav";
 import Footer from "./components/Footer/Footer";
 import ScrollTop from "./components/Helper/ScrollTop";
